@@ -53,6 +53,7 @@ public class DictionaryLinkedLists<TKey, TValue> {
 
         if(node != null) {
             array[hashIndex(key)].remove(node);
+            --elemAmount;
             return node.value;
         }
         return null;
